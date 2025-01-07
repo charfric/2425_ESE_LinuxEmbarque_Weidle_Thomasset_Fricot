@@ -8,10 +8,33 @@
 
 ![tp_linux1](https://github.com/user-attachments/assets/94b4a1b8-6e84-4c01-b2e8-799141c868a2)
 
+![tp_linux2](https://github.com/user-attachments/assets/0e3be882-a472-4368-92e8-a1c7872bc029)
+![tp_linux3](https://github.com/user-attachments/assets/9cdd4a21-49e1-4f19-bd09-fe32d342d9db)
+
+![tp_linux4](https://github.com/user-attachments/assets/dddea9c9-47fa-4eec-b019-db1901049c01)
+![tp_linux5](https://github.com/user-attachments/assets/eae37a7a-3cd2-4cca-9656-0b213e1fa6fa)
+![tp_linux6](https://github.com/user-attachments/assets/d4d4c89a-a2e9-4f01-8275-ad3dd2831694)
+
+![tp_linux7](https://github.com/user-attachments/assets/a87015db-9469-463a-9561-8dca51e9edcd)
+![tp_linux8](https://github.com/user-attachments/assets/62270597-4681-49c8-9d24-7af7bef9eb56)
+
+![tp_linux9](https://github.com/user-attachments/assets/438b30ca-ceba-4526-9b64-73df2a4a1913)
+
+![tp_linux10](https://github.com/user-attachments/assets/f806ead5-c49b-47bd-8ba6-b93947d4783b)
+
+![tp_linux11](https://github.com/user-attachments/assets/ba6952c4-a31f-4734-90ec-8557c500d394)
+
+![tp_linux12](https://github.com/user-attachments/assets/9e4cce7d-2e2e-4bc7-933d-247195cbf9f4)
+
+
+
 #### Chenillard
 
 Dans cette partie nous avons fait un chenillard. utilisation d'un driver
 On écrit directement dans un fichier la valeur 1 pour allumer la LED. 
+
+![tp_linux13](https://github.com/user-attachments/assets/6df73298-5efe-4a97-aa9f-94d02526ff82)
+
 ![tp_linux1](https://github.com/charfric/2425_ESE_LinuxEmbarque_Weidle_Thomasset_Fricot/blob/main/capture/IMG_9965.gif)
 
 ## TP2
@@ -50,35 +73,34 @@ Pour accéder à du matériel, nous devons créer un module, c'est-à-dire écri
 
 ![image](https://github.com/user-attachments/assets/2f23f470-79db-4212-820a-6c314add1228)
 
-- création d’un entrée dans /proc
-explication du code .c
+  - Création d’un entrée dans /proc :
 
 ![tp_linux15](https://github.com/user-attachments/assets/4cfe8b2e-2ed6-4265-9660-f736014b7c0e)
 
-on voit ensea_proc -> module loaded le insmod a fonctionné
-modinf repond donc bine chargé
+A l'aide de la commande modinf, on peut vérifier que le module ensea_proc se charge bien après l'utilisation de la commande insmod.
+On peut également voir que l'on peut lire le fichier ensea_proc dans le fichier /proc. On peut aussi écrire dans le fichier "bonjour ensea", ce que l'on peut vérifier en lisant le fichier. 
 
-apres !230 on lit le fichier ensea_proc dans le fichier /proc
-apres !231 -> on écrit dans le fichier "bonjour ensea"
-on lit ce qu'il y a dedans pr vérif
-on a reussi a avoir un module avec de la lecture et de l'ecriture 
+Nous avons donc réussi à obtenir un module avec de la lecture et de l'écriture.
 
-
-- utilisation d’un timer
+  - Utilisation d’un timer
 
 ![image](https://github.com/user-attachments/assets/ad1dc1d8-4ba3-4368-9684-3a3005b3eb26)
 
 ![tp_linux16](https://github.com/user-attachments/assets/405efc8c-891d-4580-8ad1-361fef4438e3)
 
-load le module du timer 
-il expire a ... jiffies, il se reinitialise quand il a termine de compter
+Tout comme le module précedent, le module du timer se charge bien. Il expire à ... jiffies, c'est-à-dire qu'il se réinitialise quand il a terminé de compter.
 
 
 ## 2.3 CrossCompilation de modules noyau
 
 À cause de la puissance limitée du processeur de la carte cible, la compilation, en particulier la compilation de modules noyau, est relativement longue. Nous allons donc, une fois encore, cross-compiler les modules noyau pour la carte SoC, à l’aide de la VM. 
 
+remarque : on ajoute le noyau de la carte au noyau de la machine virtuelle.
+
 La compilation croisée consiste à compiler du code sur une architecture pour qu'il fonctionne sur une autre architecture (dans notre cas ARM).
+
+La version exacte du noyau de la carte est la suivante :
+![tp_linux17](https://github.com/user-attachments/assets/3b0026fa-b300-41d8-a33d-c9399433a2a5)
 
 module = bout de noyau qu'on ajoute. Pour compiler un module pour un noyau, il faut qu'il soit sur la bonne version du noyau pour cela nous devons récupérer les sources du noyau actuellement en fonctionnement sur la carte VEEK.
 
@@ -100,3 +122,11 @@ Lorsque nous définissons CROSS_COMPILE=/usr/bin/arm-linux-gnueabihf-, les scrip
 La commande de compilation du Makefile $("CROSS_COMPILE")gcc... 
 
 ### Hello World
+
+![tp_linux18](https://github.com/user-attachments/assets/bf08fa46-ee2e-419b-9532-4bf084716820)
+
+Cela montre qu'on a réussi à compiler au format ARM, un module pour le noyau du SoC sur la machine virtuelle au format AMD tournant avec un autre noyau.
+
+![tp_linux19](https://github.com/user-attachments/assets/2d6b35a5-aa34-4b79-b3cb-eae7818d2ac5)
+
+ce fichier est le Makefile dans lequel on a ajouté CFLAGS_MODULE=-fno-pic. dans celui ci on le KERNEL_SOURCE qui est maintenant le noyau SoC.
