@@ -1,8 +1,8 @@
-obj-m:=monSuperModule2.o
-KERNEL_SOURCE=/lib/modules/$(shell uname -r)/build
+obj-m:=chenillard_Mod.o
+#KERNEL_SOURCE=/lib/modules/$(shell uname -r)/build
 
-#KERNEL_SOURCE=/home/ensea/linux-socfpga
-#CFLAGS_MODULE := -fno-pic
+KERNEL_SOURCE=/home/ensea/linux-socfpga
+CFLAGS_MODULE := -fno-pic
 
 all :
 	make -C $(KERNEL_SOURCE) M=$(PWD) modules
