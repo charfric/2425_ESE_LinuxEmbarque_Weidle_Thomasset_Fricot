@@ -2,7 +2,7 @@
 #include <linux/kernel.h>
 #include <linux/init.h>
 
-#define DRIVER_AUTHOR "Mr JeSuisLa"
+#define DRIVER_AUTHOR "Mr Rems Weidle"
 #define DRIVER_DESC "Hello world Module"
 #define DRIVER_LICENSE "GPL"
 

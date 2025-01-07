@@ -1,4 +1,4 @@
-obj-m:=hello.o
+obj-m:=monSuperModule2.o
 KERNEL_SOURCE=/lib/modules/$(shell uname -r)/build
 
 all :
