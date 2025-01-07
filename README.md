@@ -69,10 +69,10 @@ La commande **git config** peremt de lire ou écrire des configuration dans le g
 ### Récupération de la configuration actuelle du noyau
 
 Depuis le dossier ~/linux-socfpga/, nous lançons les commandes suivantes :
-  export CROSS_COMPILE=<chemin_arm-linux-gnueabihf->
-  → cette ligne définit la variable CROSS_COMPILE, utilisée par make pour indiquer quel outil de compilation croisée utiliser.
-  export ARCH=arm
-  → cette ligne définit l'architecture cible comme étant arm. 
+  - export CROSS_COMPILE=<chemin_arm-linux-gnueabihf->
+    → cette ligne définit la variable CROSS_COMPILE, utilisée par make pour indiquer quel outil de compilation croisée utiliser.
+  - export ARCH=arm
+    → cette ligne définit l'architecture cible comme étant arm. 
   
 Le <chemin_arm-linux-gnueabihf> est le chemin noté plus haut sans le gcc final. Par exemple : /usr/bin/arm-linux gnueabihf-
 
