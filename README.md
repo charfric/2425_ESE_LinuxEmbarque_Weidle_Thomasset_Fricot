@@ -62,6 +62,8 @@ explication du code .c
 
 À cause de la puissance limitée du processeur de la carte cible, la compilation, en particulier la compilation de modules noyau, est relativement longue. Nous allons donc, une fois encore, cross-compiler les modules noyau pour la carte SoC, à l’aide de la VM. 
 
+La compilation croisée consiste à compiler du code sur une architecture pour qu'il fonctionne sur une autre architecture (dans notre cas ARM).
+
 module = bout de noyau qu'on ajoute. Pour compiler un module pour un noyau, il faut qu'il soit sur la bonne version du noyau pour cela nous devons récupérer les sources du noyau actuellement en fonctionnement sur la carte VEEK.
 
 La commande **git checkout** permet de récupérer la version 6b20a2929d54 du github et ce fixer à cette version.
@@ -71,12 +73,14 @@ La commande **git config** peremt de lire ou écrire des configuration dans le g
 
 Depuis le dossier ~/linux-socfpga/, nous lançons les commandes suivantes :
   - export CROSS_COMPILE=<chemin_arm-linux-gnueabihf->
-    → cette ligne définit la variable CROSS_COMPILE, utilisée par make pour indiquer quel outil de compilation croisée utiliser.
+    → cette ligne définit la variable CROSS_COMPILE, utilisée par make pour indiquer quel outil de compilation croisée utiliser. 
   - export ARCH=arm
     → cette ligne définit l'architecture cible comme étant arm. 
   
 Le <chemin_arm-linux-gnueabihf> est le chemin noté plus haut sans le gcc final. Par exemple : /usr/bin/arm-linux gnueabihf-
 
 Lorsque nous définissons CROSS_COMPILE=/usr/bin/arm-linux-gnueabihf-, les scripts de compilation peuvent automatiquement ajouter le suffixe correspondant (comme gcc, as, etc.) pour appeler le bon outil.
+
+La commande de compilation du Makefile $("CROSS_COMPILE")gcc... 
 
 ### Hello World
