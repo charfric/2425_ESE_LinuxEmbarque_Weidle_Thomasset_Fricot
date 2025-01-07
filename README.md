@@ -130,3 +130,10 @@ Cela montre qu'on a réussi à compiler au format ARM, un module pour le noyau d
 ![tp_linux19](https://github.com/user-attachments/assets/2d6b35a5-aa34-4b79-b3cb-eae7818d2ac5)
 
 ce fichier est le Makefile dans lequel on a ajouté CFLAGS_MODULE=-fno-pic. dans celui ci on le KERNEL_SOURCE qui est maintenant le noyau SoC.
+
+Chenillard :
+
+les adresses s'incremment de deux en deux, la vitesse a laquelle ca s'affiche
+
+![tp_linux20](https://github.com/user-attachments/assets/838992e9-ff51-4d3e-a78c-b9a0a1434048)
+
