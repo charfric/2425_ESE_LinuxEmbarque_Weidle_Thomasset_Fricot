@@ -37,7 +37,7 @@ En utilisant les fichiers Makefile et hello.c, nous allons créer un module noya
 
 Pour tester votre module, nous avons utilisé modinfo, lsmod, insmod et rmmod (à utiliser avec sudo) :
 
-**Photos**
+![tp_linux14](https://github.com/user-attachments/assets/b9798ba9-0aac-4699-93d0-3c0179cff91a)
 
 Pour accéder à du matériel, nous devons créer un module, c'est-à-dire écrire un ensemble de fonctions. L'utilisateur pourra ainsi accéder au driver, en écrivant ou en lisant un fichier (cela lui permet d'utiliser les fonctions du module). 
 
