@@ -53,9 +53,25 @@ Pour accéder à du matériel, nous devons créer un module, c'est-à-dire écri
 - création d’un entrée dans /proc
 explication du code .c
 
+![tp_linux15](https://github.com/user-attachments/assets/4cfe8b2e-2ed6-4265-9660-f736014b7c0e)
+
+on voit ensea_proc -> module loaded le insmod a fonctionné
+modinf repond donc bine chargé
+
+apres !230 on lit le fichier ensea_proc dans le fichier /proc
+apres !231 -> on écrit dans le fichier "bonjour ensea"
+on lit ce qu'il y a dedans pr vérif
+on a reussi a avoir un module avec de la lecture et de l'ecriture 
+
+
 - utilisation d’un timer
 
 ![image](https://github.com/user-attachments/assets/ad1dc1d8-4ba3-4368-9684-3a3005b3eb26)
+
+![tp_linux16](https://github.com/user-attachments/assets/405efc8c-891d-4580-8ad1-361fef4438e3)
+
+load le module du timer 
+il expire a ... jiffies, il se reinitialise quand il a termine de compter
 
 
 ## 2.3 CrossCompilation de modules noyau
