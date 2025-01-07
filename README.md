@@ -139,7 +139,7 @@ les adresses s'incremment de deux en deux, la vitesse a laquelle ca s'affiche
 
 La chenillard ainsi créé nous permet de changer la vistesse de clignotement ainsi que le nombre de LED qu'on allume pour le chenillard. 
 
-![tp_linuxChenillard1](https://github.com/user-attachments/assets/6df73298-5efe-4a97-aa9f-94d02526ff82)
+![tp_linuxChenillard1](capture/Chenillard_2.gif)
 
 ![tp_Chenillard2](https://github.com/user-attachments/assets/6df73298-5efe-4a97-aa9f-94d02526ff82)
 
