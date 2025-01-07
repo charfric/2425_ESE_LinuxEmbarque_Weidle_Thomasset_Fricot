@@ -16,6 +16,7 @@ Dans cette partie nous avons fait un chenillard. utilisation d'un driver
 
 ## TP2
 
+### 2.1 Accès aux registres
 On parle de la mémoire virtuelle, séance 3 de linux, on sait qu'il y a des processus de virtualisation de mémoire, cela permet d'avoir des endroits plus sécurisés car nous n'avons pas directement accès à l'adresse. Il y a cependant des limitations techniques.
 
 La mémoire virtuelle permet :
@@ -23,6 +24,9 @@ La mémoire virtuelle permet :
   - Limiter la fragmentation ;
   - De mettre en place des mécanismes de protection de la mémoire ;
   - De partager la mémoire entre processus
+
+#### Chenillard
+Pour le chenillard, nous dévons écrire dans une adresse physique et pour cela nous accédons à un périphérique mappé en mémoire avec un appel à la primitive mmap().
 
 ## 2.2 Compilation de module noyau sur la VM
 
@@ -32,5 +36,4 @@ En utilisant les fichiers makefile et hello.c, nous allons créer un module noya
 
 
 
-#### 2.3.4 Chenillard
-Pour le chenillard, nous dévons écrire dans une adresse physique et pour cela nous accédons à un périphérique mappé en mémoire avec un appel à la primitive mmap().
+
