@@ -11,8 +11,11 @@
 #### Chenillard
 
 Dans cette partie nous avons fait un chenillard. utilisation d'un driver
+On écrit directement dans un fhichier. 
 ![tp_linux1](https://github.com/charfric/2425_ESE_LinuxEmbarque_Weidle_Thomasset_Fricot/blob/main/capture/IMG_9965.gif)
 
+Dans le deuxième on écrit directement dans le registre de la LED pour l'allumer. 
+![tp_linux1](https://github.com/charfric/2425_ESE_LinuxEmbarque_Weidle_Thomasset_Fricot/blob/main/capture/IMG_9965.gif)
 
 ## TP2
 
