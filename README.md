@@ -57,5 +57,8 @@ explication du code .c
 
 module = bout de noyau qu'on ajoute. Pour compiler un module pour un noyau, il faut qu'il soit sur la bonne version du noyau pour cela nous devons récupérer les sources du noyau actuellement en fonctionnement sur la carte VEEK.
 
+La commande **git checkout** permet de récupérer la version 6b20a2929d54 du github et ce fixer à cette version.
+La commande **git config** peremt de lire ou écrire des configuration dans le git. La commande **core.abbrev 7** permet d'uniformiser les hash en les habrégeant à 7 caractères.
+
 ### Récupéreation de la configuration actuelle du noyau
 
