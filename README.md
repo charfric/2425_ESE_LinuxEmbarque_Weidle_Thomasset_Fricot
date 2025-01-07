@@ -40,9 +40,17 @@ Pour accéder à du matériel, nous devons créer un module, c'est-à-dire écri
 
 ![image](https://github.com/user-attachments/assets/2f23f470-79db-4212-820a-6c314add1228)
 
+- création d’un entrée dans /proc
+explication du code .c
+
+- utilisation d’un timer
 
 ![image](https://github.com/user-attachments/assets/ad1dc1d8-4ba3-4368-9684-3a3005b3eb26)
 
+
+## 2.3 CrossCompilation de modules noyau
+
+À cause de la puissance limitée du processeur de la carte cible, la compilation, en particulier la compilation de modules noyau, est relativement longue. Nous allons donc, une fois encore, cross-compiler les modules noyau pour la carte SoC, à l’aide de la VM. 
 
 
 
