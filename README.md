@@ -1,1 +1,1 @@
-# 2425_ESE_LinuxEmbarqu-_Weidle_Thomasset_Fricot
+# 2425_ESE_LinuxEmbarqué_Weidle_Thomasset_Fricot
