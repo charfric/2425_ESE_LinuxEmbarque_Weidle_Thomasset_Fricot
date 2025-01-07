@@ -39,6 +39,12 @@ Pour tester votre module, nous avons utilisé modinfo, lsmod, insmod et rmmod (�
 
 ![tp_linux14](https://github.com/user-attachments/assets/b9798ba9-0aac-4699-93d0-3c0179cff91a)
 
+insmod : insérer le module sans vérification des dépendances
+rmmod : décharger le module
+lsmod : lister les modules chargés
+modinfo : afficher des infos sur le module
+dmesg : afficher les messages émis par les modules
+
 Pour accéder à du matériel, nous devons créer un module, c'est-à-dire écrire un ensemble de fonctions. L'utilisateur pourra ainsi accéder au driver, en écrivant ou en lisant un fichier (cela lui permet d'utiliser les fonctions du module). 
 
 ![image](https://github.com/user-attachments/assets/2f23f470-79db-4212-820a-6c314add1228)
