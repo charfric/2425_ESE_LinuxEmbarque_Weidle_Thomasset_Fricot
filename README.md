@@ -41,6 +41,7 @@ Pour accéder à du matériel, nous devons créer un module, c'est-à-dire écri
 ![image](https://github.com/user-attachments/assets/2f23f470-79db-4212-820a-6c314add1228)
 
 
+![image](https://github.com/user-attachments/assets/ad1dc1d8-4ba3-4368-9684-3a3005b3eb26)
 
 
 
