@@ -55,5 +55,7 @@ explication du code .c
 
 À cause de la puissance limitée du processeur de la carte cible, la compilation, en particulier la compilation de modules noyau, est relativement longue. Nous allons donc, une fois encore, cross-compiler les modules noyau pour la carte SoC, à l’aide de la VM. 
 
+module = bout de noyau qu'on ajoute. Pour compiler un module pour un noyau, il faut qu'il soit sur la bonne version du noyau pour cela nous devons récupérer les sources du noyau actuellement en fonctionnement sur la carte VEEK.
 
+### Récupéreation de la configuration actuelle du noyau
 
