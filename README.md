@@ -66,5 +66,16 @@ module = bout de noyau qu'on ajoute. Pour compiler un module pour un noyau, il f
 La commande **git checkout** permet de récupérer la version 6b20a2929d54 du github et ce fixer à cette version.
 La commande **git config** peremt de lire ou écrire des configuration dans le git. La commande **core.abbrev 7** permet d'uniformiser les hash en les habrégeant à 7 caractères.
 
-### Récupéreation de la configuration actuelle du noyau
+### Récupération de la configuration actuelle du noyau
 
+Depuis le dossier ~/linux-socfpga/, nous lançons les commandes suivantes :
+  export CROSS_COMPILE=<chemin_arm-linux-gnueabihf->
+  → cette ligne définit la variable CROSS_COMPILE, utilisée par make pour indiquer quel outil de compilation croisée utiliser.
+  export ARCH=arm
+  → cette ligne définit l'architecture cible comme étant arm. 
+  
+Le <chemin_arm-linux-gnueabihf> est le chemin noté plus haut sans le gcc final. Par exemple : /usr/bin/arm-linux gnueabihf-
+
+Lorsque nous définissons CROSS_COMPILE=/usr/bin/arm-linux-gnueabihf-, les scripts de compilation peuvent automatiquement ajouter le suffixe correspondant (comme gcc, as, etc.) pour appeler le bon outil.
+
+### Hello World
