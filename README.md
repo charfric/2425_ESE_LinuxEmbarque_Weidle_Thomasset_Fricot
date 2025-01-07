@@ -30,7 +30,15 @@ Pour le chenillard, nous dévons écrire dans une adresse physique et pour cela 
 
 ## 2.2 Compilation de module noyau sur la VM
 
-En utilisant les fichiers makefile et hello.c, nous allons créer un module noyau sous md pour linux, nous utilisons ensuite la commande make pour build le module en fonction du hello.c. Après, nous utilisons sudo insmod hello.ko, pour insérer le module hello créé parmi les modules dispo sur linux.
+En utilisant les fichiers Makefile et hello.c, nous allons créer un module noyau sous amd pour linux, nous utilisons ensuite la commande make pour build le module en fonction du hello.c. Après, nous utilisons sudo insmod hello.ko, pour insérer le module hello créé parmi les modules dispo sur linux.
+
+Pour tester votre module, nous avons utilisé modinfo, lsmod, insmod et rmmod (à utiliser avec sudo) :
+
+**Photos**
+
+Pour accéder à du matériel, nous devons créer un module, c'est-à-dire écrire un ensemble de fonctions. L'utilisateur pourra ainsi accéder au driver, en écrivant ou en lisant un fichier (cela lui permet d'utiliser les fonctions du module). 
+
+![image](https://github.com/user-attachments/assets/2f23f470-79db-4212-820a-6c314add1228)
 
 
 
