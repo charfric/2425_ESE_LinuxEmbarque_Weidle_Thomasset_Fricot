@@ -34,12 +34,16 @@ Après c'être connecté au wifi **Techtinkerers** qui est le même réseau que 
 #### Découverte de la cible
 
 On utilise les commandes **cat, less et more** pour voir le contenu des fichiers.
-La commande **"cat"** affiche entièrement le contenue du fichier dans le terminal. 
-La commande **"less"** permet d'afficher le contenu d'un fichier de maniere intéractive.
+- La commande **"cat"** affiche entièrement le contenue du fichier dans le terminal. 
+- La commande **"less"** permet d'afficher le contenu d'un fichier de maniere intéractive.
+- La commande **"more"** permet d'afficher le contenu d'un fichier une page à la fois.
+
+  Dans la figure ci-dessous on affiche tous les répertoire présent sous la racine.
 
 <p align="center"><img src="https://github.com/user-attachments/assets/d4d4c89a-a2e9-4f01-8275-ad3dd2831694" width="600" /> </p> 
 
-![tp_linux6](https://github.com/user-attachments/assets/d4d4c89a-a2e9-4f01-8275-ad3dd2831694)
+On affiche toutes les informations de CPU présente dans le fichier **"cpuinfo"**.
+<p align="center"><img src="https://github.com/user-attachments/assets/a87015db-9469-463a-9561-8dca51e9edcd" width="600" /> </p> 
 
 ![tp_linux7](https://github.com/user-attachments/assets/a87015db-9469-463a-9561-8dca51e9edcd)
 ![tp_linux8](https://github.com/user-attachments/assets/62270597-4681-49c8-9d24-7af7bef9eb56)
