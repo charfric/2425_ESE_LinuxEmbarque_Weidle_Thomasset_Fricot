@@ -189,7 +189,7 @@ Sur les figures suivantes, on vérifie que la modification du pattern et de la v
 
 <p align="center"><img src="capture/Chenillard_2.gif" width="600" /> </p>
 
-<p align="center"><img src="capture/Chenillard2_2.3.gif width="600" /> </p>
+<p align="center"><img src="capture/Chenillard2_2.3.gif" width="600" /> </p>
 
 
 ## TP3 
