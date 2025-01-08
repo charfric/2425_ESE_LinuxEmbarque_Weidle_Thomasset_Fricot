@@ -234,4 +234,7 @@ En récupérant le fichier **gpio-leds.c** et en le compilant, on allume les 8 p
 ### 3.2 Module final
 
 On dévide de tester le module avec les patterns suivants : FF, AA, BB, CC.
-<p align="center"><img src="https://github.com/charfric/2425_ESE_LinuxEmbarque_Weidle_Thomasset_Fricot/blob/main/capture/device_tree_chenillard.gif" width="600" /> </p> 
+<p align="center"><img src="https://github.com/charfric/2425_ESE_LinuxEmbarque_Weidle_Thomasset_Fricot/blob/main/capture/device_tree_chenillard.gif" width="600" /> </p>
+
+<p align="center"><img src="capture/tp_linux99.png" width="600" /> </p>
+
