@@ -33,6 +33,11 @@ Après c'être connecté au wifi **Techtinkerers** qui est le même réseau que 
 
 #### Découverte de la cible
 
+On utilise les commandes **cat, less et more** pour voir le contenu des fichiers.
+La commande **"cat"** affiche entièrement le contenue du fichier dans le terminal. 
+La commande **"less"** permet d'afficher le contenu d'un fichier de maniere intéractive.
+
+<p align="center"><img src="https://github.com/user-attachments/assets/d4d4c89a-a2e9-4f01-8275-ad3dd2831694" width="600" /> </p> 
 
 ![tp_linux6](https://github.com/user-attachments/assets/d4d4c89a-a2e9-4f01-8275-ad3dd2831694)
 
@@ -184,4 +189,7 @@ Cette fonction va lire et récupérer les informations du périphériques.
 La fonction **"write"** est appelé à chaque fois qu'une opération d'écriture se produit sur l'un des fichiers de caractères.
 Cette fonction permet de mettre à jour les données du périphérique.
 
-<p align="center"><img src="https://github.com/charfric/2425_ESE_LinuxEmbarque_Weidle_Thomasset_Fricot/blob/main/capture/tp_linux21.png" width="600" /> </p> 
+### 3.2 Module final
+
+On dévide de tester le module avec les patterns suivants : FF, AA, BB, CC.
+<p align="center"><img src="https://github.com/charfric/2425_ESE_LinuxEmbarque_Weidle_Thomasset_Fricot/blob/main/capture/device_tree_chenillard.gif" width="600" /> </p> 
