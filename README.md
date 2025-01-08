@@ -115,8 +115,9 @@ Pour accéder à du matériel, nous devons créer un module, c'est-à-dire écri
 <p align="center"><img src="https://github.com/user-attachments/assets/2f23f470-79db-4212-820a-6c314add1228" width="600" /> </p> 
 
   - Création d’un entrée dans /proc :
+    
+<p align="center"><img src="https://github.com/user-attachments/assets/4cfe8b2e-2ed6-4265-9660-f736014b7c0e" width="600" /> </p> 
 
-![tp_linux15](https://github.com/user-attachments/assets/4cfe8b2e-2ed6-4265-9660-f736014b7c0e)
 
 A l'aide de la commande modinf, on peut vérifier que le module ensea_proc se charge bien après l'utilisation de la commande insmod.
 On peut également voir que l'on peut lire le fichier ensea_proc dans le fichier /proc. On peut aussi écrire dans le fichier "bonjour ensea", ce que l'on peut vérifier en lisant le fichier. 
@@ -124,10 +125,11 @@ On peut également voir que l'on peut lire le fichier ensea_proc dans le fichier
 Nous avons donc réussi à obtenir un module avec de la lecture et de l'écriture.
 
   - Utilisation d’un timer
+    
+<p align="center"><img src="https://github.com/user-attachments/assets/ad1dc1d8-4ba3-4368-9684-3a3005b3eb26" width="600" /> </p>
 
-![image](https://github.com/user-attachments/assets/ad1dc1d8-4ba3-4368-9684-3a3005b3eb26)
+<p align="center"><img src="https://github.com/user-attachments/assets/405efc8c-891d-4580-8ad1-361fef4438e3" width="600" /> </p>
 
-![tp_linux16](https://github.com/user-attachments/assets/405efc8c-891d-4580-8ad1-361fef4438e3)
 
 Tout comme le module précedent, le module du timer se charge bien. Il expire à ... jiffies, c'est-à-dire qu'il se réinitialise quand il a terminé de compter.
 
@@ -141,7 +143,9 @@ remarque : on ajoute le noyau de la carte au noyau de la machine virtuelle.
 La compilation croisée consiste à compiler du code sur une architecture pour qu'il fonctionne sur une autre architecture (dans notre cas ARM).
 
 La version exacte du noyau de la carte est la suivante :
-![tp_linux17](https://github.com/user-attachments/assets/3b0026fa-b300-41d8-a33d-c9399433a2a5)
+
+<p align="center"><img src="https://github.com/user-attachments/assets/3b0026fa-b300-41d8-a33d-c9399433a2a5" width="600" /> </p>
+
 
 module = bout de noyau qu'on ajoute. Pour compiler un module pour un noyau, il faut qu'il soit sur la bonne version du noyau pour cela nous devons récupérer les sources du noyau actuellement en fonctionnement sur la carte VEEK.
 
@@ -164,11 +168,12 @@ La commande de compilation du Makefile $("CROSS_COMPILE")gcc...
 
 ### Hello World
 
-![tp_linux18](https://github.com/user-attachments/assets/bf08fa46-ee2e-419b-9532-4bf084716820)
+<p align="center"><img src="https://github.com/user-attachments/assets/bf08fa46-ee2e-419b-9532-4bf084716820" width="600" /> </p>
 
 Cela montre qu'on a réussi à compiler au format ARM, un module pour le noyau du SoC sur la machine virtuelle au format AMD tournant avec un autre noyau.
 
-![tp_linux19](https://github.com/user-attachments/assets/2d6b35a5-aa34-4b79-b3cb-eae7818d2ac5)
+<p align="center"><img src="https://github.com/user-attachments/assets/2d6b35a5-aa34-4b79-b3cb-eae7818d2ac5" width="600" /> </p>
+
 
 Ce fichier est le Makefile dans lequel on a ajouté CFLAGS_MODULE=-fno-pic. dans celui-ci on le KERNEL_SOURCE qui est maintenant le noyau SoC.
 
@@ -178,13 +183,14 @@ Dans cette partie, on a créé un chenillard dont on peut modifier :
   - Le pattern depuis le fichier : /proc/ensea/chenille
   - La vitesse au moment du chargement du module.
 
-![tp_linux20](https://github.com/user-attachments/assets/838992e9-ff51-4d3e-a78c-b9a0a1434048)
+<p align="center"><img src="https://github.com/user-attachments/assets/838992e9-ff51-4d3e-a78c-b9a0a1434048" width="600" /> </p>
 
 Sur les figures suivantes, on vérifie que la modification du pattern et de la vitesse est fonctionnelle :
 
-![tp_linuxChenillard1](capture/Chenillard_2.gif)
+<p align="center"><img src="capture/Chenillard_2.gif" width="600" /> </p>
 
-![tp_Chenillard2](capture/Chenillard2_2.3.gif)
+<p align="center"><img src="capture/Chenillard2_2.3.gif width="600" /> </p>
+
 
 ## TP3 
 
