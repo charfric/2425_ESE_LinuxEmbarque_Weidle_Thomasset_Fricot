@@ -45,17 +45,20 @@ On utilise les commandes **cat, less et more** pour voir le contenu des fichiers
 On affiche toutes les informations de CPU présente dans le fichier **"cpuinfo"**.
 <p align="center"><img src="https://github.com/user-attachments/assets/a87015db-9469-463a-9561-8dca51e9edcd" width="600" /> </p> 
 
-![tp_linux7](https://github.com/user-attachments/assets/a87015db-9469-463a-9561-8dca51e9edcd)
-![tp_linux8](https://github.com/user-attachments/assets/62270597-4681-49c8-9d24-7af7bef9eb56)
+Ici, on affiche toutes les information du fichier **"iomem"**. Dans ce fichier on peut voir tous les périphérique ainsi que leurs adresses dans la carte.
+<p align="center"><img src="https://github.com/user-attachments/assets/62270597-4681-49c8-9d24-7af7bef9eb56" width="600" /> </p> 
 
-![tp_linux9](https://github.com/user-attachments/assets/438b30ca-ceba-4526-9b64-73df2a4a1913)
+On affiche ce qu'il se trouve dans le répertoire **"sys/class"**. Puis dans **"leds"**.
+<p align="center"><img src="https://github.com/user-attachments/assets/438b30ca-ceba-4526-9b64-73df2a4a1913" width="600" /> </p> 
 
-![tp_linux10](https://github.com/user-attachments/assets/f806ead5-c49b-47bd-8ba6-b93947d4783b)
+<p align="center"><img src="https://github.com/user-attachments/assets/f806ead5-c49b-47bd-8ba6-b93947d4783b" width="600" /> </p> 
 
-![tp_linux11](https://github.com/user-attachments/assets/ba6952c4-a31f-4734-90ec-8557c500d394)
+<p align="center"><img src="https://github.com/user-attachments/assets/ba6952c4-a31f-4734-90ec-8557c500d394" width="600" /> </p> 
 
-![tp_linux12](https://github.com/user-attachments/assets/9e4cce7d-2e2e-4bc7-933d-247195cbf9f4)
+#### Compilation croisée
 
+Grâce à la crosse compilation on peut tester le programme **"Hello_world"** le compiler sur l'ordinateur et le testé sur la carte SoC.
+<p align="center"><img src="https://github.com/user-attachments/assets/9e4cce7d-2e2e-4bc7-933d-247195cbf9f4" width="600" /> </p> 
 
 
 #### Chenillard
