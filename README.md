@@ -183,3 +183,5 @@ Cette fonction va lire et récupérer les informations du périphériques.
 
 La fonction **"write"** est appelé à chaque fois qu'une opération d'écriture se produit sur l'un des fichiers de caractères.
 Cette fonction permet de mettre à jour les données du périphérique.
+
+<p align="center"><img src="https://github.com/charfric/2425_ESE_LinuxEmbarque_Weidle_Thomasset_Fricot/blob/main/capture/tp_linux21.png" width="600" /> </p> 
