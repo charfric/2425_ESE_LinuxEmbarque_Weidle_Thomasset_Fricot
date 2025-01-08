@@ -165,3 +165,18 @@ Sur les figures suivantes, on vérifie que la modification du pattern et de la v
 
 ![tp_Chenillard2](capture/Chenillard2_2.3.gif)
 
+## TP3 
+
+### 3.1 Module accédant aux LED via /dev
+
+En récupérant le fichier **gpio-leds.c** et en le compilant, on allume les 8 prelmières LEDs.
+<p align="center"><img src="https://github.com/charfric/2425_ESE_LinuxEmbarque_Weidle_Thomasset_Fricot/blob/main/capture/tp_linux21.png" width="600" /> </p> 
+
+La fonction **"probe"** est appelé à chaque fois que le noyau trouve un nouveau périphérique que notre driver peut gérer. Dans notre cas, elle ne devrait être appelé que pour l'instanciation du module **ENSEA LED**.
+
+La fonction **"remove"** est appelé à chaque fois qu'un périphérique géré par le driver est supprim et également mrsque le driver est supprimé du système. 
+
+La fonction **"read"** est appelé à chaque fois qu'une opération de lecture se produit sur l'un des fichiers de caractères.
+
+La fonction **"write"** est appelé à chaque fois qu'une opération d'écriture se produit sur l'un des fichiers de caractères.
+
