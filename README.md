@@ -89,7 +89,10 @@ La mémoire virtuelle permet plus précisement:
 #### Chenillard
 Pour  réaliser un chenillard, nous devons écrire dans une adresse physique et pour cela nous accédons à un périphérique mappé en mémoire avec un appel à la primitive mmap().
 On écrit directement dans le registre de la LED pour l'allumer. 
-![tp_linux1](capture/Chenillard_2.gif)
+
+<p align="center"><img src="capture/Chenillard_2.gif" width="600" /> </p> 
+
+
 
 
 ## 2.2 Compilation de module noyau sur la VM
@@ -98,7 +101,8 @@ En utilisant les fichiers Makefile et hello.c, nous allons créer un module noya
 
 Pour tester votre module, nous avons utilisé modinfo, lsmod, insmod et rmmod (à utiliser avec sudo) :
 
-![tp_linux14](https://github.com/user-attachments/assets/b9798ba9-0aac-4699-93d0-3c0179cff91a)
+<p align="center"><img src="https://github.com/user-attachments/assets/b9798ba9-0aac-4699-93d0-3c0179cff91a" width="600" /> </p> 
+
 
 insmod : insérer le module sans vérification des dépendances
 rmmod : décharger le module
@@ -108,7 +112,7 @@ dmesg : afficher les messages émis par les modules
 
 Pour accéder à du matériel, nous devons créer un module, c'est-à-dire écrire un ensemble de fonctions. L'utilisateur pourra ainsi accéder au driver, en écrivant ou en lisant un fichier (cela lui permet d'utiliser les fonctions du module). 
 
-![image](https://github.com/user-attachments/assets/2f23f470-79db-4212-820a-6c314add1228)
+<p align="center"><img src="https://github.com/user-attachments/assets/2f23f470-79db-4212-820a-6c314add1228" width="600" /> </p> 
 
   - Création d’un entrée dans /proc :
 
