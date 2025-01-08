@@ -66,9 +66,14 @@ Grâce à la crosse compilation on peut tester le programme **"Hello_world"** le
 Dans cette partie nous avons fait un chenillard. utilisation d'un driver
 On écrit directement dans un fichier la valeur 1 pour allumer la LED. 
 
-![tp_linux13](https://github.com/user-attachments/assets/6df73298-5efe-4a97-aa9f-94d02526ff82)
+<p align="center"><img src="https://github.com/user-attachments/assets/6df73298-5efe-4a97-aa9f-94d02526ff82" width="600" /> </p> 
 
-![tp_linux1](https://github.com/charfric/2425_ESE_LinuxEmbarque_Weidle_Thomasset_Fricot/blob/main/capture/IMG_9965.gif)
+<p align="center"><img src="https://github.com/user-attachments/assets/6df73298-5efe-4a97-aa9f-94d02526ff82" width="600" /> </p> 
+
+Plutôt que de passer par la commande echo on a créé un programme C qui va écrire directement dans les ficheir des leds. 
+
+<p align="center"><img src="https://github.com/charfric/2425_ESE_LinuxEmbarque_Weidle_Thomasset_Fricot/blob/main/capture/IMG_9965.gif" width="600" /> </p> 
+
 
 ## TP2
 
