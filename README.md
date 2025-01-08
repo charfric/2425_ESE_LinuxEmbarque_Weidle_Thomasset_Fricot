@@ -40,18 +40,17 @@ On écrit directement dans un fichier la valeur 1 pour allumer la LED.
 ## TP2
 
 ### 2.1 Accès aux registres
-On parle de la mémoire virtuelle, séance 3 de linux, on sait qu'il y a des processus de virtualisation de mémoire, cela permet d'avoir des endroits plus sécurisés car nous n'avons pas directement accès à l'adresse. Il y a cependant des limitations techniques.
+Dans ce tp, nous allons parler de la mémoire virtuelle, ce qui correspond à la séance 3 de cours. On sait qu'il y a des processus de virtualisation de mémoire, cela permet d'avoir des endroits plus sécurisés car nous n'avons pas directement accès à l'adresse. Il y a cependant des limitations techniques.
 
-La mémoire virtuelle permet :
+La mémoire virtuelle permet plus précisement:
   - D’utiliser de la mémoire de masse comme extension de la mémoire vive ;
-  - Limiter la fragmentation ;
+  - De limiter la fragmentation ;
   - De mettre en place des mécanismes de protection de la mémoire ;
   - De partager la mémoire entre processus
 
 #### Chenillard
-Pour le chenillard, nous dévons écrire dans une adresse physique et pour cela nous accédons à un périphérique mappé en mémoire avec un appel à la primitive mmap().
-
-Dans le deuxième on écrit directement dans le registre de la LED pour l'allumer. 
+Pour  réaliser un chenillard, nous devons écrire dans une adresse physique et pour cela nous accédons à un périphérique mappé en mémoire avec un appel à la primitive mmap().
+On écrit directement dans le registre de la LED pour l'allumer. 
 ![tp_linux1](capture/Chenillard_2.gif)
 
 
@@ -129,11 +128,11 @@ Cela montre qu'on a réussi à compiler au format ARM, un module pour le noyau d
 
 ![tp_linux19](https://github.com/user-attachments/assets/2d6b35a5-aa34-4b79-b3cb-eae7818d2ac5)
 
-ce fichier est le Makefile dans lequel on a ajouté CFLAGS_MODULE=-fno-pic. dans celui ci on le KERNEL_SOURCE qui est maintenant le noyau SoC.
+Ce fichier est le Makefile dans lequel on a ajouté CFLAGS_MODULE=-fno-pic. dans celui-ci on le KERNEL_SOURCE qui est maintenant le noyau SoC.
 
-Chenillard :
+### Chenillard
 
-les adresses s'incremment de deux en deux, la vitesse a laquelle ca s'affiche
+Sur la figure suivante, les adresses s'incrémente de deux en deux :
 
 ![tp_linux20](https://github.com/user-attachments/assets/838992e9-ff51-4d3e-a78c-b9a0a1434048)
 
