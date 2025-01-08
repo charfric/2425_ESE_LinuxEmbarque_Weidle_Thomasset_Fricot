@@ -5,19 +5,35 @@
 
 ### Prise en main
 
-#### Préparation de la carte SD
+#### Connection au système
 
 Pour démarrer nous avons installer Linux sur la carte SD de la carte pour pouvoir utiliser Linux sur notre carte.
+Une fois connecter au SOC nous avons observé la séquence de démarrrage.
+On peut remarqué en utilisant la commande **df -h** que la mémoire de la carte n'est pas complétement utilisé. Sur les 3Go de disponible seulement 1,3Go sont utilisé.
 
-<p align="center"><img src="https://github.com/user-attachments/assets/94b4a1b8-6e84-4c01-b2e8-799141c868a2" width="600" /> </p> 
+<p align="center"><img src="https://github.com/user-attachments/assets/94b4a1b8-6e84-4c01-b2e8-799141c868a2" width="600" /> </p>
+
+Nous avons ensuite augmenté la taille du système de fichier à l'aide la commande **./resize2fs_once**.
+
+<p align="center"><img src="https://github.com/user-attachments/assets/0e3be882-a472-4368-92e8-a1c7872bc029" width="600" /> </p> 
+
+#### Configuration réseau
+
+A l'aide de la commande **ifconfig** nous avons pu vérifier que la carte disposait d'une adresse IP. Sur la figure ci-dessous on peut voir que la carte n'est pas connecté et n'a donc pas d'adresse IP.
+
+<p align="center"><img src="https://github.com/user-attachments/assets/9cdd4a21-49e1-4f19-bd09-fe32d342d9db" width="600" /> </p> 
+
+Après avoir connecté la carte, on peut voir sur la figure ci-dessous que celle-ci dispose bien d'une adresse IP.
+
+<p align="center"><img src="https://github.com/user-attachments/assets/dddea9c9-47fa-4eec-b019-db1901049c01" width="600" /> </p> 
+
+Après c'être connecté au wifi **Techtinkerers** qui est le même réseau que le câble ethernet on ping la carte pour vérifier que l'on arrive bien à ce connecter. 
+
+<p align="center"><img src="https://github.com/user-attachments/assets/eae37a7a-3cd2-4cca-9656-0b213e1fa6fa" width="600" /> </p> 
+
+#### Découverte de la cible
 
 
-
-![tp_linux2](https://github.com/user-attachments/assets/0e3be882-a472-4368-92e8-a1c7872bc029)
-![tp_linux3](https://github.com/user-attachments/assets/9cdd4a21-49e1-4f19-bd09-fe32d342d9db)
-
-![tp_linux4](https://github.com/user-attachments/assets/dddea9c9-47fa-4eec-b019-db1901049c01)
-![tp_linux5](https://github.com/user-attachments/assets/eae37a7a-3cd2-4cca-9656-0b213e1fa6fa)
 ![tp_linux6](https://github.com/user-attachments/assets/d4d4c89a-a2e9-4f01-8275-ad3dd2831694)
 
 ![tp_linux7](https://github.com/user-attachments/assets/a87015db-9469-463a-9561-8dca51e9edcd)
