@@ -1,3 +1,4 @@
+
 # 2425_ESE_LinuxEmbarqué_Weidle_Thomasset_Fricot
 
 ## TP1
@@ -132,11 +133,13 @@ Ce fichier est le Makefile dans lequel on a ajouté CFLAGS_MODULE=-fno-pic. dans
 
 ### Chenillard
 
-Sur la figure suivante, les adresses s'incrémente de deux en deux :
+Dans cette partie, on a créé un chenillard dont on peut modifier :
+  - Le pattern depuis le fichier : /proc/ensea/chenille
+  - La vitesse au moment du chargement du module.
 
 ![tp_linux20](https://github.com/user-attachments/assets/838992e9-ff51-4d3e-a78c-b9a0a1434048)
 
-La chenillard ainsi créé nous permet de changer la vistesse de clignotement ainsi que le nombre de LED qu'on allume pour le chenillard. 
+Sur les figures suivantes, on vérifie que la modification du pattern et de la vitesse est fonctionnelle :
 
 ![tp_linuxChenillard1](capture/Chenillard_2.gif)
 
