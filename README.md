@@ -7,7 +7,11 @@
 
 #### Préparation de la carte SD
 
-![tp_linux1](https://github.com/user-attachments/assets/94b4a1b8-6e84-4c01-b2e8-799141c868a2)
+Pour démarrer nous avons installer Linux sur la carte SD de la carte pour pouvoir utiliser Linux sur notre carte.
+
+<p align="center"><img src="https://github.com/user-attachments/assets/94b4a1b8-6e84-4c01-b2e8-799141c868a2" width="600" /> </p> 
+
+
 
 ![tp_linux2](https://github.com/user-attachments/assets/0e3be882-a472-4368-92e8-a1c7872bc029)
 ![tp_linux3](https://github.com/user-attachments/assets/9cdd4a21-49e1-4f19-bd09-fe32d342d9db)
