@@ -1,4 +1,4 @@
-obj-m:=chenillard_Mod.o
+obj-m:=superTest.o
 #KERNEL_SOURCE=/lib/modules/$(shell uname -r)/build
 
 KERNEL_SOURCE=/home/ensea/linux-socfpga
