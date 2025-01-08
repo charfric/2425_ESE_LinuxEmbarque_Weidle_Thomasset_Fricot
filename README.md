@@ -218,17 +218,18 @@ Sur les figures suivantes, on vérifie que la modification du pattern et de la v
 En récupérant le fichier **gpio-leds.c** et en le compilant, on allume les 8 prelmières LEDs.
 <p align="center"><img src="https://github.com/charfric/2425_ESE_LinuxEmbarque_Weidle_Thomasset_Fricot/blob/main/capture/tp_linux21.png" width="600" /> </p> 
 
-La fonction **"probe"** est appelé à chaque fois que le noyau trouve un nouveau périphérique que notre driver peut gérer. Dans notre cas, elle ne devrait être appelé que pour l'instanciation du module **ENSEA LED**.
-Cette fonction sert à initialiser et configurer le périphérique.
-
-La fonction **"remove"** est appelé à chaque fois qu'un périphérique géré par le driver est supprimé et également mrsque le driver est supprimé du système. 
-Cette fonction permet de décharger les ressources allouées par le driver lorsque qu'un périphérique est retiré.
-
-La fonction **"read"** est appelé à chaque fois qu'une opération de lecture se produit sur l'un des fichiers de caractères.
-Cette fonction va lire et récupérer les informations du périphériques. 
-
-La fonction **"write"** est appelé à chaque fois qu'une opération d'écriture se produit sur l'un des fichiers de caractères.
-Cette fonction permet de mettre à jour les données du périphérique.
+>[!Note]
+>La fonction **"probe"** est appelé à chaque fois que le noyau trouve un nouveau périphérique que notre driver peut gérer. Dans notre cas, elle ne devrait être appelé que pour l'instanciation du module >**ENSEA LED**.
+>Cette fonction sert à initialiser et configurer le périphérique.
+>
+>La fonction **"remove"** est appelé à chaque fois qu'un périphérique géré par le driver est supprimé et également mrsque le driver est supprimé du système.
+>Cette fonction permet de décharger les ressources allouées par le driver lorsque qu'un périphérique est retiré.
+>
+>La fonction **"read"** est appelé à chaque fois qu'une opération de lecture se produit sur l'un des fichiers de caractères.
+>Cette fonction va lire et récupérer les informations du périphériques.
+>
+>La fonction **"write"** est appelé à chaque fois qu'une opération d'écriture se produit sur l'un des fichiers de caractères.
+>Cette fonction permet de mettre à jour les données du périphérique.
 
 ### 3.2 Module final
 
