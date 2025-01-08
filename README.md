@@ -8,9 +8,9 @@
 #### Connection au système
 
 >[!Note]
->Pour démarrer nous avons installer Linux sur la carte SD de la carte pour pouvoir utiliser Linux sur notre carte.
->Une fois connecter au SOC nous avons observé la séquence de démarrrage.
->On peut remarqué en utilisant la commande **df -h** que la mémoire de la carte n'est pas complétement utilisé. Sur les 3Go de disponible seulement 1,3Go sont utilisé.
+>Pour démarrer, nous avons installé Linux sur la carte SD de la carte pour pouvoir utiliser Linux sur notre carte.
+>Une fois connecté au SOC, nous avons observé la séquence de démarrrage.
+>On peut remarquer en utilisant la commande **df -h** que la mémoire de la carte n'est pas complétement utilisée. Sur les 3Go de disponible seulement 1.3Go sont utilisés.
 
 <p align="center"><img src="https://github.com/user-attachments/assets/94b4a1b8-6e84-4c01-b2e8-799141c868a2" width="600" /> </p>
 
@@ -21,17 +21,17 @@
 
 #### Configuration réseau
 >[!Note]
->A l'aide de la commande **ifconfig** nous avons pu vérifier que la carte disposait d'une adresse IP. Sur la figure ci-dessous on peut voir que la carte n'est pas connecté et n'a donc pas d'adresse IP.
+>A l'aide de la commande **ifconfig** nous avons pu vérifier que la carte disposait d'une adresse IP. Sur la figure ci-dessous on peut voir que la carte n'est pas connectée et n'a donc pas d'adresse IP.
 
 <p align="center"><img src="https://github.com/user-attachments/assets/9cdd4a21-49e1-4f19-bd09-fe32d342d9db" width="600" /> </p> 
 
 >[!Note]
->Après avoir connecté la carte, on peut voir sur la figure ci-dessous que celle-ci dispose bien d'une adresse IP.
+>Après avoir connecté la carte, on peut voir sur la figure ci-dessous que la carte dispose bien d'une adresse IP.
 
 <p align="center"><img src="https://github.com/user-attachments/assets/dddea9c9-47fa-4eec-b019-db1901049c01" width="600" /> </p> 
 
 >[!Note]
->Après c'être connecté au wifi **Techtinkerers** qui est le même réseau que le câble ethernet on ping la carte pour vérifier que l'on arrive bien à ce connecter. 
+>Après s'être connecté au wifi **Techtinkerers** qui est le même réseau que le câble ethernet, on ping la carte pour vérifier que l'on arrive bien à se connecter. 
 
 <p align="center"><img src="https://github.com/user-attachments/assets/eae37a7a-3cd2-4cca-9656-0b213e1fa6fa" width="600" /> </p> 
 
@@ -39,18 +39,18 @@
 
 >[!Note]
 >On utilise les commandes **cat, less et more** pour voir le contenu des fichiers.
->- La commande **"cat"** affiche entièrement le contenue du fichier dans le terminal. 
->- La commande **"less"** permet d'afficher le contenu d'un fichier de maniere intéractive.
+>- La commande **"cat"** affiche entièrement le contenu du fichier dans le terminal. 
+>- La commande **"less"** permet d'afficher le contenu d'un fichier de manière intéractive.
 >- La commande **"more"** permet d'afficher le contenu d'un fichier une page à la fois.
 
-Dans la figure ci-dessous on affiche tous les répertoire présent sous la racine.
+Dans la figure ci-dessous, on affiche tous les répertoires présents sous la racine.
 
 <p align="center"><img src="https://github.com/user-attachments/assets/d4d4c89a-a2e9-4f01-8275-ad3dd2831694" width="600" /> </p> 
 
-On affiche toutes les informations de CPU présente dans le fichier **"cpuinfo"**.
+On affiche ensuite toutes les informations de CPU présentes dans le fichier **"cpuinfo"**.
 <p align="center"><img src="https://github.com/user-attachments/assets/a87015db-9469-463a-9561-8dca51e9edcd" width="600" /> </p> 
 
-Ici, on affiche toutes les information du fichier **"iomem"**. Dans ce fichier on peut voir tous les périphérique ainsi que leurs adresses dans la carte.
+Ici, on affiche toutes les informations du fichier **"iomem"**. Dans ce fichier, on peut voir tous les périphériques ainsi que leur adresse dans la carte.
 <p align="center"><img src="https://github.com/user-attachments/assets/62270597-4681-49c8-9d24-7af7bef9eb56" width="600" /> </p> 
 
 On affiche ce qu'il se trouve dans le répertoire **"sys/class"**. Puis dans **"leds"**.
@@ -63,14 +63,14 @@ On affiche ce qu'il se trouve dans le répertoire **"sys/class"**. Puis dans **"
 #### Compilation croisée
 
 >[!Note]
->Grâce à la crosse compilation on peut tester le programme **"Hello_world"** le compiler sur l'ordinateur et le testé sur la carte SoC.
+>Grâce à la cross-compilation, on peut tester le programme **"Hello_world"**, le compiler sur l'ordinateur et le tester sur la carte SoC.
 <p align="center"><img src="https://github.com/user-attachments/assets/9e4cce7d-2e2e-4bc7-933d-247195cbf9f4" width="600" /> </p> 
 
 
 #### Chenillard
 
 >[!Note]
->Dans cette partie nous avons fait un chenillard. utilisation d'un driver
+>Dans cette partie, nous avons réalisé un chenillard.
 >On écrit directement dans un fichier la valeur 1 pour allumer la LED. 
 
 <p align="center"><img src="https://github.com/user-attachments/assets/6df73298-5efe-4a97-aa9f-94d02526ff82" width="600" /> </p> 
@@ -78,7 +78,7 @@ On affiche ce qu'il se trouve dans le répertoire **"sys/class"**. Puis dans **"
 <p align="center"><img src="https://github.com/user-attachments/assets/6df73298-5efe-4a97-aa9f-94d02526ff82" width="600" /> </p> 
 
 >[!Note]
->Plutôt que de passer par la commande echo on a créé un programme C qui va écrire directement dans les ficheir des leds. 
+>Plutôt que de passer par la commande echo, on a créé un programme C qui va écrire directement dans les fichiers des leds. 
 
 <p align="center"><img src="https://github.com/charfric/2425_ESE_LinuxEmbarque_Weidle_Thomasset_Fricot/blob/main/capture/IMG_9965.gif" width="600" /> </p> 
 
@@ -106,14 +106,12 @@ On affiche ce qu'il se trouve dans le répertoire **"sys/class"**. Puis dans **"
 <p align="center"><img src="capture/Chenillard_2.gif" width="600" /> </p> 
 
 
-
-
 ## 2.2 Compilation de module noyau sur la VM
 
 >[!Note]
 >En utilisant les fichiers Makefile et hello.c, nous allons créer un module noyau sous amd pour linux, nous utilisons ensuite la commande make pour build le module en fonction du hello.c. Après, nous >utilisons sudo insmod hello.ko, pour insérer le module hello créé parmi les modules dispo sur linux.
 
-Pour tester votre module, nous avons utilisé modinfo, lsmod, insmod et rmmod (à utiliser avec sudo) :
+Pour tester notre module, nous avons utilisé modinfo, lsmod, insmod et rmmod (à utiliser avec sudo) :
 
 <p align="center"><img src="https://github.com/user-attachments/assets/b9798ba9-0aac-4699-93d0-3c0179cff91a" width="600" /> </p> 
 
@@ -166,8 +164,8 @@ La version exacte du noyau de la carte est la suivante :
 >module = bout de noyau qu'on ajoute. Pour compiler un module pour un noyau, il faut qu'il soit sur la bonne version du noyau pour cela nous devons récupérer les sources du noyau actuellement en >fonctionnement sur la carte VEEK.
 
 >[!Note]
->La commande **git checkout** permet de récupérer la version 6b20a2929d54 du github et ce fixer à cette version.
->La commande **git config** peremt de lire ou écrire des configuration dans le git. La commande **core.abbrev 7** permet d'uniformiser les hash en les habrégeant à 7 caractères.
+>La commande **git checkout** permet de récupérer la version 6b20a2929d54 du github et de se fixer à cette version.
+>La commande **git config** permet de lire ou écrire des configurations dans le git. La commande **core.abbrev 7** permet d'uniformiser les hash en les habrégeant à 7 caractères.
 
 ### Récupération de la configuration actuelle du noyau
 
@@ -200,7 +198,7 @@ La commande de compilation du Makefile $("CROSS_COMPILE")gcc...
 >[!Important]
 >Dans cette partie, on a créé un chenillard dont on peut modifier :
   >- Le pattern depuis le fichier : /proc/ensea/chenille
- > - La vitesse au moment du chargement du module.
+  >- La vitesse au moment du chargement du module.
 
 <p align="center"><img src="https://github.com/user-attachments/assets/838992e9-ff51-4d3e-a78c-b9a0a1434048" width="600" /> </p>
 
@@ -219,16 +217,16 @@ En récupérant le fichier **gpio-leds.c** et en le compilant, on allume les 8 p
 <p align="center"><img src="https://github.com/charfric/2425_ESE_LinuxEmbarque_Weidle_Thomasset_Fricot/blob/main/capture/tp_linux21.png" width="600" /> </p> 
 
 >[!Note]
->La fonction **"probe"** est appelé à chaque fois que le noyau trouve un nouveau périphérique que notre driver peut gérer. Dans notre cas, elle ne devrait être appelé que pour l'instanciation du module >**ENSEA LED**.
->Cette fonction sert à initialiser et configurer le périphérique.
+>La fonction **"probe"** est appelé à chaque fois que le noyau trouve un nouveau périphérique que notre driver peut gérer. Dans notre cas, elle ne devrait être appelée que pour l'instanciation du module >**ENSEA LED**.
+>Cette fonction sert à initialiser et à configurer le périphérique.
 >
->La fonction **"remove"** est appelé à chaque fois qu'un périphérique géré par le driver est supprimé et également mrsque le driver est supprimé du système.
+>La fonction **"remove"** est appelée à chaque fois qu'un périphérique géré par le driver est supprimé et également lorsque le driver est supprimé du système.
 >Cette fonction permet de décharger les ressources allouées par le driver lorsque qu'un périphérique est retiré.
 >
->La fonction **"read"** est appelé à chaque fois qu'une opération de lecture se produit sur l'un des fichiers de caractères.
+>La fonction **"read"** est appelée à chaque fois qu'une opération de lecture se produit sur l'un des fichiers de caractères.
 >Cette fonction va lire et récupérer les informations du périphériques.
 >
->La fonction **"write"** est appelé à chaque fois qu'une opération d'écriture se produit sur l'un des fichiers de caractères.
+>La fonction **"write"** est appelée à chaque fois qu'une opération d'écriture se produit sur l'un des fichiers de caractères.
 >Cette fonction permet de mettre à jour les données du périphérique.
 
 ### 3.2 Module final
@@ -240,6 +238,6 @@ On dévide de tester le module avec les patterns suivants : FF, AA, BB, CC.
 
 ### 4.2 Device Tree et module
 
-A l'aide de la commande dmeg le noyau nous envoies l'heure.
+A l'aide de la commande dmeg le noyau nous envoie l'heure.
 <p align="center"><img src="capture/tp_linux99.png" width="600" /> </p>
 
